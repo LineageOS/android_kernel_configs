@@ -1,4 +1,4 @@
-<kernel minlts="5.4.0" />
+<kernel minlts="5.4.42" />
 
 <!-- KEEP ALPHABETICALLY SORTED -->
 <!-- ARM base requirements -->
@@ -57,6 +57,10 @@
 	</config>
 	<config>
 		<key>CONFIG_SETEND_EMULATION</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_SHADOW_CALL_STACK</key>
 		<value type="bool">y</value>
 	</config>
 	<config>
