@@ -97,10 +97,6 @@
 		<key>CONFIG_RETPOLINE</key>
 		<value type="bool">y</value>
 	</config>
-	<config>
-		<key>CONFIG_BPF_JIT_ALWAYS_ON</key>
-		<value type="bool">y</value>
-	</config>
 </group>
 
 <!-- x86_64 base requirements -->
@@ -113,6 +109,10 @@
 	</conditions>
 	<config>
 		<key>CONFIG_CFI_CLANG</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_BPF_JIT_ALWAYS_ON</key>
 		<value type="bool">y</value>
 	</config>
 </group>
