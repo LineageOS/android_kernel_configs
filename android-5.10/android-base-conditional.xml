@@ -84,6 +84,10 @@
 		<value type="bool">y</value>
 	</config>
 	<config>
+		<key>CONFIG_KFENCE</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
 		<key>CONFIG_USERFAULTFD</key>
 		<value type="bool">y</value>
 	</config>
@@ -100,6 +104,10 @@
 	<config>
 		<key>CONFIG_DEVKMEM</key>
 		<value type="bool">n</value>
+	</config>
+	<config>
+		<key>CONFIG_KFENCE</key>
+		<value type="bool">y</value>
 	</config>
 	<config>
 		<key>CONFIG_PAGE_TABLE_ISOLATION</key>
