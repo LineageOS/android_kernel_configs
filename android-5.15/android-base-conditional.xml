@@ -60,6 +60,10 @@
 		<value type="bool">y</value>
 	</config>
 	<config>
+		<key>CONFIG_RANDOMIZE_BASE</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
 		<key>CONFIG_SETEND_EMULATION</key>
 		<value type="bool">y</value>
 	</config>
@@ -123,6 +127,10 @@
 	</config>
 	<config>
 		<key>CONFIG_HAVE_MOVE_PUD</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_RANDOMIZE_BASE</key>
 		<value type="bool">y</value>
 	</config>
 	<config>
