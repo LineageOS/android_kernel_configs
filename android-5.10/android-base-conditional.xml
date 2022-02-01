@@ -202,3 +202,17 @@
 		<value type="bool">y</value>
 	</config>
 </group>
+
+<!-- CONFIG_VMAP_STACK requirement -->
+<group>
+	<conditions>
+		<config>
+			<key>CONFIG_HAVE_ARCH_VMAP_STACK</key>
+			<value type="bool">y</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_VMAP_STACK</key>
+		<value type="bool">y</value>
+	</config>
+</group>
