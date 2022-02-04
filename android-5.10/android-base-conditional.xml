@@ -216,3 +216,17 @@
 		<value type="bool">y</value>
 	</config>
 </group>
+
+<!-- CONFIG_INIT_STACK_ALL_ZERO requirement -->
+<group>
+	<conditions>
+		<config>
+			<key>CONFIG_CC_HAS_AUTO_VAR_INIT_ZERO</key>
+			<value type="bool">y</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_INIT_STACK_ALL_ZERO</key>
+		<value type="bool">y</value>
+	</config>
+</group>
