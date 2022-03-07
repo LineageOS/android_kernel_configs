@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "11be3265_dcbbadc3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-07T14:39:27Z",
+      "side": 1,
+      "message": "This fixes VINTF issue bellow:\n\n\u003e  \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d Summary \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\u003e  Device Manifest?    GOOD\n\u003e  Device Matrix?      GOOD\n\u003e  Framework Manifest? GOOD\n\u003e  Framework Matrix?   GOOD\n\u003e  Device HAL Manifest \u003c\u003d\u003d\u003e Framework Compatibility Matrix? GOOD\n\u003e  Framework HAL Manifest \u003c\u003d\u003d\u003e Device Compatibility Matrix? GOOD\n\u003e  Runtime info \u003c\u003d\u003d\u003e Framework Compatibility Matrix?        INCOMPATIBLE, Missing config CONFIG_NETFILTER_XT_MATCH_QTAGUID\n\u003e  VintfObject::checkCompatibility?                         INCOMPATIBLE, Runtime info and framework compatibility matrix are incompatible: Missing config CONFIG_NETFILTER_XT_MATCH_QTAGUID\n\u003e  VintfObject::CheckDeprecation (against device manifest) (w/o hidlmetadata)? GOOD",
+      "revId": "1bb8a9678a88a53f39d6802f94e809b69e6d1ec3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
