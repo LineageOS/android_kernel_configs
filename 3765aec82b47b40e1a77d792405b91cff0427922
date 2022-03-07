@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a4b48583_48d0dc6b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2022-03-07T18:40:54Z",
+      "side": 1,
+      "message": "Original google commit (by which this is inspired) for R on 4.9 was is this: https://android.googlesource.com/kernel/configs/+/1d961dc1ab31616f1aa5598a71f98c7c0c40c0c9\n\nNow for S (as BPF seems mandatory), we could drop the conditional stuff and move everything to required?\n\n",
+      "revId": "3765aec82b47b40e1a77d792405b91cff0427922",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8a99951d_9695c2c2",
