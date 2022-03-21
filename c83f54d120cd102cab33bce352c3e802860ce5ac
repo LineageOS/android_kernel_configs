@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "48a41c65_7a53d645",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3917
+      },
+      "writtenOn": "2022-03-21T18:50:57Z",
+      "side": 1,
+      "message": "I don\u0027t see the point in conditional file anymore. \n\nIs it not enough just to add\n\nCONFIG_NETFILTER_XT_MATCH_OWNER\u003dy\nCONFIG_NET_CLS_BPF\u003dy",
+      "revId": "c83f54d120cd102cab33bce352c3e802860ce5ac",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
