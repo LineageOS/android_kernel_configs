@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4b484240_dc8f8f92",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-21T16:28:41Z",
+      "side": 1,
+      "message": "Wondering if we should just skip the conditional file and add the configs directly to the base config.",
+      "revId": "77b6152ddc0eaf3115435ae1a6ee6d6f17a5578f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
