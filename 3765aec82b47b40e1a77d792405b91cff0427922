@@ -36,6 +36,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b7b0534a_31ddf234",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-21T16:29:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8beaa0f4_a91e9e89",
+      "revId": "3765aec82b47b40e1a77d792405b91cff0427922",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8a99951d_9695c2c2",
@@ -59,6 +77,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "77b1b3ee_94a35532",
+        "filename": "p/android-4.4/android-base-conditional.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-21T16:29:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8a99951d_9695c2c2",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 86
+      },
+      "revId": "3765aec82b47b40e1a77d792405b91cff0427922",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "39af87d1_18712e3c",
@@ -72,6 +114,30 @@
       "writtenOn": "2022-03-07T14:38:50Z",
       "side": 1,
       "message": "Remove this?",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 8
+      },
+      "revId": "3765aec82b47b40e1a77d792405b91cff0427922",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01df634d_e541ada6",
+        "filename": "p/android-4.4/android-base-conditional.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-03-21T16:29:17Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "39af87d1_18712e3c",
       "range": {
         "startLine": 20,
         "startChar": 0,
