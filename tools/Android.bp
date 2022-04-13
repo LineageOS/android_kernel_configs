@@ -10,13 +10,4 @@ python_binary_host {
     srcs: [
         "kconfig_xml_fixup.py",
     ],
-
-    version: {
-        py2: {
-            enabled: true,
-        },
-        py3: {
-            enabled: false,
-        },
-    },
 }
