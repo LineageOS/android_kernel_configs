@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5107ca10_11b5fb35",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2023-04-13T21:30:00Z",
+      "side": 1,
+      "message": "`aospremote` ends up with https://android.googlesource.com/platform/kernel/configs which is wrong. This fixes aosp-merger",
+      "revId": "02e3cb83128fedf3d8edcf9d78475b14483ec03d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
