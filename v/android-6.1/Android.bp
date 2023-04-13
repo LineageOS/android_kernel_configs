@@ -18,7 +18,7 @@ package {
 }
 
 kernel_config {
-    name: "kernel_config_current_6.1",
+    name: "kernel_config_v_6.1",
     srcs: [
         "android-base.config",
     ],
