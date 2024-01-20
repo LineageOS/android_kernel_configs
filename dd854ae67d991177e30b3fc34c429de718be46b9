@@ -33,6 +33,24 @@
       "message": "Also this counts as ricing, we value security more than a silly kernel config",
       "revId": "dd854ae67d991177e30b3fc34c429de718be46b9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da976356_5a5f7bb1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32882
+      },
+      "writtenOn": "2024-01-20T12:44:46Z",
+      "side": 1,
+      "message": "OK. I see!",
+      "parentUuid": "601b6fa9_e1e40692",
+      "revId": "dd854ae67d991177e30b3fc34c429de718be46b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
