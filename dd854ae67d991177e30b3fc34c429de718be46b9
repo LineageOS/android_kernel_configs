@@ -16,6 +16,23 @@
       "message": "Still waiting for an answer.",
       "revId": "dd854ae67d991177e30b3fc34c429de718be46b9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "601b6fa9_e1e40692",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-01-20T12:38:02Z",
+      "side": 1,
+      "message": "Also this counts as ricing, we value security more than a silly kernel config",
+      "revId": "dd854ae67d991177e30b3fc34c429de718be46b9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
