@@ -33,6 +33,24 @@
       "message": "Why not just update your kernel?",
       "revId": "64d5da64c81d54977e7b050290fa106133ca1363",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a8a23324_efe9a244",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-05-13T19:29:20Z",
+      "side": 1,
+      "message": "https://discord.com/channels/628008280605589549/1148741168427974736/1228193617936646144\n\nTL;DR: outgoing network connections are broken",
+      "parentUuid": "3fb35416_1748e97a",
+      "revId": "64d5da64c81d54977e7b050290fa106133ca1363",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
