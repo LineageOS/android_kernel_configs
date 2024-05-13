@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d74b9cd_9e601b44",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-05-13T18:05:50Z",
+      "side": 1,
+      "message": "Verified on tegra 4.9 kernel, passes check-vintf-all and no known issues at runtime.",
+      "revId": "64d5da64c81d54977e7b050290fa106133ca1363",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
