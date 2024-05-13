@@ -16,6 +16,23 @@
       "message": "Verified on tegra 4.9 kernel, passes check-vintf-all and no known issues at runtime.",
       "revId": "64d5da64c81d54977e7b050290fa106133ca1363",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3fb35416_1748e97a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2024-05-13T19:01:06Z",
+      "side": 1,
+      "message": "Why not just update your kernel?",
+      "revId": "64d5da64c81d54977e7b050290fa106133ca1363",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
