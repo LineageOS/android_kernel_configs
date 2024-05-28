@@ -54,6 +54,11 @@ class Bump(object):
                 year = datetime.datetime.now().year
                 check_call("sed -i'' -E 's/Copyright \\(C\\) [0-9]{{4,}}/Copyright (C) {}/g' {}".format(year, abs_path), shell=True)
                 replace_configs_module_name(self.current_release, self.new_release, abs_path)
+                if os.path.basename(abs_path) == "Android.bp":
+                    if shutil.which("bpfmt") is not None:
+                        check_call("bpfmt -w {}".format(abs_path), shell=True)
+                    else:
+                        print("bpfmt is not available so {} is not being formatted. Try `m bpfmt` first".format(abs_path))
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
