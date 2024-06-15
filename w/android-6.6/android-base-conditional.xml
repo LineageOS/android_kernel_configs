@@ -1,4 +1,4 @@
-<kernel minlts="4.19.42" />
+<kernel minlts="6.6.0" />
 
 <!-- KEEP ALPHABETICALLY SORTED -->
 <!-- ARM base requirements -->
@@ -36,7 +36,19 @@
 		</config>
 	</conditions>
 	<config>
+		<key>CONFIG_ARM64_PAN</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_ARM64_SW_TTBR0_PAN</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
 		<key>CONFIG_ARMV8_DEPRECATED</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_CFI_CLANG</key>
 		<value type="bool">y</value>
 	</config>
 	<config>
@@ -48,45 +60,39 @@
 		<value type="bool">y</value>
 	</config>
 	<config>
+		<key>CONFIG_RANDOMIZE_BASE</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
 		<key>CONFIG_SETEND_EMULATION</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_SHADOW_CALL_STACK</key>
 		<value type="bool">y</value>
 	</config>
 	<config>
 		<key>CONFIG_SWP_EMULATION</key>
 		<value type="bool">y</value>
 	</config>
-</group>
-
-<!-- For ARM64, CONFIG_ARM64_SW_TTBR0_PAN || CONFIG_ARM64_PAN -->
-<group>
-	<conditions>
-		<config>
-			<key>CONFIG_ARM64</key>
-			<value type="bool">y</value>
-		</config>
-		<config>
-			<key>CONFIG_ARM64_SW_TTBR0_PAN</key>
-			<value type="bool">n</value>
-		</config>
-	</conditions>
 	<config>
-		<key>CONFIG_ARM64_PAN</key>
+		<key>CONFIG_BPF_JIT_ALWAYS_ON</key>
 		<value type="bool">y</value>
 	</config>
-</group>
-<group>
-	<conditions>
-		<config>
-			<key>CONFIG_ARM64</key>
-			<value type="bool">y</value>
-		</config>
-		<config>
-			<key>CONFIG_ARM64_PAN</key>
-			<value type="bool">n</value>
-		</config>
-	</conditions>
 	<config>
-		<key>CONFIG_ARM64_SW_TTBR0_PAN</key>
+		<key>CONFIG_HAVE_MOVE_PMD</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_HAVE_MOVE_PUD</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_KFENCE</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_USERFAULTFD</key>
 		<value type="bool">y</value>
 	</config>
 </group>
@@ -104,11 +110,49 @@
 		<value type="bool">n</value>
 	</config>
 	<config>
+		<key>CONFIG_KFENCE</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
 		<key>CONFIG_PAGE_TABLE_ISOLATION</key>
 		<value type="bool">y</value>
 	</config>
 	<config>
 		<key>CONFIG_RETPOLINE</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_HAVE_MOVE_PMD</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_HAVE_MOVE_PUD</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_RANDOMIZE_BASE</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_USERFAULTFD</key>
+		<value type="bool">y</value>
+	</config>
+</group>
+
+<!-- x86_64 base requirements -->
+<group>
+	<conditions>
+		<config>
+			<key>CONFIG_X86_64</key>
+			<value type="bool">y</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_CFI_CLANG</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_BPF_JIT_ALWAYS_ON</key>
 		<value type="bool">y</value>
 	</config>
 </group>
@@ -139,43 +183,62 @@
 	</config>
 </group>
 
-<!-- CONFIG_MEMCG || CONFIG_PSI -->
+<!-- EXT4 requirements -->
 <group>
 	<conditions>
 		<config>
-			<key>CONFIG_MEMCG</key>
-			<value type="bool">n</value>
+			<key>CONFIG_EXT4_FS</key>
+			<value type="bool">y</value>
 		</config>
 	</conditions>
 	<config>
-		<key>CONFIG_PSI</key>
-		<value type="bool">y</value>
-	</config>
-</group>
-<group>
-	<conditions>
-		<config>
-			<key>CONFIG_PSI</key>
-			<value type="bool">n</value>
-		</config>
-	</conditions>
-	<config>
-		<key>CONFIG_MEMCG</key>
+		<key>CONFIG_EXT4_FS_POSIX_ACL</key>
 		<value type="bool">y</value>
 	</config>
 </group>
 
-<!-- CONFIG_USB implies CONFIG_USB_RTL8152 -->
+<!-- F2FS requirements -->
 <group>
 	<conditions>
 		<config>
-			<key>CONFIG_USB_RTL8152</key>
+			<key>CONFIG_F2FS_FS</key>
+			<value type="bool">y</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_F2FS_FS_POSIX_ACL</key>
+		<value type="bool">y</value>
+	</config>
+</group>
+
+<!-- CONFIG_VMAP_STACK requirement -->
+<group>
+	<conditions>
+		<config>
+			<key>CONFIG_HAVE_ARCH_VMAP_STACK</key>
+			<value type="bool">y</value>
+		</config>
+		<config>
+			<key>CONFIG_KASAN_SW_TAGS</key>
 			<value type="bool">n</value>
 		</config>
 	</conditions>
 	<config>
-		<key>CONFIG_USB</key>
-		<value type="bool">n</value>
+		<key>CONFIG_VMAP_STACK</key>
+		<value type="bool">y</value>
 	</config>
 </group>
 
+<!-- CONFIG_INIT_STACK_ALL_ZERO requirement -->
+<group>
+	<conditions>
+		<config>
+			<key>CONFIG_CC_HAS_AUTO_VAR_INIT_ZERO</key>
+			<value type="bool">y</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_INIT_STACK_ALL_ZERO</key>
+		<value type="bool">y</value>
+	</config>
+</group>
