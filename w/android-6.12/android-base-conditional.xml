@@ -1,4 +1,4 @@
-<kernel minlts="6.6.0" />
+<kernel minlts="6.12.0" />
 
 <!-- KEEP ALPHABETICALLY SORTED -->
 <!-- ARM base requirements -->
@@ -76,10 +76,6 @@
 		<value type="bool">y</value>
 	</config>
 	<config>
-		<key>CONFIG_BPF_JIT_ALWAYS_ON</key>
-		<value type="bool">y</value>
-	</config>
-	<config>
 		<key>CONFIG_HAVE_MOVE_PMD</key>
 		<value type="bool">y</value>
 	</config>
@@ -114,11 +110,11 @@
 		<value type="bool">y</value>
 	</config>
 	<config>
-		<key>CONFIG_PAGE_TABLE_ISOLATION</key>
+		<key>CONFIG_MITIGATION_PAGE_TABLE_ISOLATION</key>
 		<value type="bool">y</value>
 	</config>
 	<config>
-		<key>CONFIG_RETPOLINE</key>
+		<key>CONFIG_MITIGATION_RETPOLINE</key>
 		<value type="bool">y</value>
 	</config>
 	<config>
@@ -149,10 +145,6 @@
 	</conditions>
 	<config>
 		<key>CONFIG_CFI_CLANG</key>
-		<value type="bool">y</value>
-	</config>
-	<config>
-		<key>CONFIG_BPF_JIT_ALWAYS_ON</key>
 		<value type="bool">y</value>
 	</config>
 </group>

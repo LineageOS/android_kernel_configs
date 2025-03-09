@@ -18,7 +18,7 @@ package {
 }
 
 kernel_config {
-    name: "kernel_config_w_6.next",
+    name: "kernel_config_w_6.12",
     srcs: [
         "android-base.config",
     ],

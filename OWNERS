@@ -1,1 +1,3 @@
 include kernel/common:android-mainline:/OWNERS
+
+per-file approved-ogki-builds.xml=gprocida@google.com,szuweilin@google.com
