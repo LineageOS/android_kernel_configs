@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "41434b92_b658eb70",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20370
+      },
+      "writtenOn": "2025-08-30T09:46:21Z",
+      "side": 1,
+      "message": "This series breaks build with rhodep (kernel-5.4):\n```\nerror: hardware/interfaces/compatibility_matrices/Android.bp:97:1: \"framework_compatibility_matrix.6.xml\" depends on und\nefined module \"kernel_config_q_4.9\".\nOr did you mean [\"kernel_config_s_4.19\"]?\nerror: hardware/interfaces/compatibility_matrices/Android.bp:84:1: \"framework_compatibility_matrix.5.xml\" depends on und\nefined module \"kernel_config_p_4.4\".\nOr did you mean [\"kernel_config_r_5.4\" \"kernel_config_s_4.14\" \"kernel_config_s_5.4\"]?\nerror: hardware/interfaces/compatibility_matrices/Android.bp:84:1: \"framework_compatibility_matrix.5.xml\" depends on und\nefined module \"kernel_config_q_4.9\".\n```",
+      "revId": "ad42d941608c5a793150ca6241b18f5aa12497c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
