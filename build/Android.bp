@@ -22,11 +22,13 @@ bootstrap_go_package {
     pkgPath: "android/soong/kernel/configs",
     deps: [
         "blueprint",
+        "blueprint-gobtools",
         "blueprint-proptools",
         "soong",
         "soong-android",
     ],
     srcs: [
+        "configs_enc.go",
         "kernel_config.go",
     ],
     pluginFor: ["soong_build"],

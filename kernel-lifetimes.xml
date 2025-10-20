@@ -1,3 +1,25 @@
+<!--
+
+The source of truth for Android kernel End-of-Life (EOL) is:
+
+  https://source.android.com/docs/core/architecture/kernel/android-common#support-lifetimes
+
+Additionally, the EOL for minor kernel versions (LTS versions) are available publicly
+on the GKI release pages at:
+
+  https://source.android.com/docs/core/architecture/kernel/gki-release-builds
+
+and are consistent with the LTS 2.0 requirements.
+
+The EOL values listed in this file are used for enforcement of EOL by various tests.
+They may indicate later dates than the official EOLs in the documents listed above
+for cases where enforcement were relaxed by as long as 1 quarter. For example, when
+transitioning from monthly GKI releases to quarterly, the GKI lifetimes transitioned
+from 12-months to 15-months. To help with the transition, some of the heavily used
+monthly releases were given an additional 3 months before enforcement (but the EOL
+was not changed - just the enforcement)
+
+-->
 <kernels schema_version="0">
 	<branch name="android-4.14" version="4.14" launch="2017-10-22" eol="2024-01-01">
 		<no-releases reason="non-GKI kernel"/>
@@ -18,11 +40,11 @@
 			<release version="5.10.198" launch="2023-11-14" eol="2024-11-01"/>
 			<release version="5.10.205" launch="2024-03-12" eol="2024-11-01"/>
 			<release version="5.10.209" launch="2024-05-09" eol="2025-06-01"/>
-			<release version="5.10.218" launch="2024-08-12" eol="2025-09-01"/>
-			<release version="5.10.226" launch="2024-11-12" eol="2025-12-01"/>
-			<release version="5.10.233" launch="2025-02-11" eol="2026-03-01"/>
-			<release version="5.10.236" launch="2025-05-09" eol="2026-06-01"/>
-			<release version="5.10.237" launch="2025-06-25" eol="2026-07-01"/>
+			<release version="5.10.218" launch="2024-08-12" eol="2025-12-01"/>
+			<release version="5.10.226" launch="2024-11-12" eol="2026-03-01"/>
+			<release version="5.10.233" launch="2025-02-11" eol="2026-06-01"/>
+			<release version="5.10.236" launch="2025-05-09" eol="2026-09-01"/>
+			<release version="5.10.237" launch="2025-06-25" eol="2026-10-01"/>
 		</lts-versions>
 	</branch>
 
@@ -35,10 +57,11 @@
 			<release version="5.10.210" launch="2024-06-21" eol="2025-07-01"/>
 			<release version="5.10.214" launch="2024-07-24" eol="2025-08-01"/>
 			<release version="5.10.218" launch="2024-08-22" eol="2025-09-01"/>
-			<release version="5.10.223" launch="2024-09-26" eol="2026-12-01"/>
+			<release version="5.10.223" launch="2024-09-26" eol="2025-12-01"/>
 			<release version="5.10.228" launch="2025-01-22" eol="2026-02-01"/>
 			<release version="5.10.234" launch="2025-03-24" eol="2026-04-01"/>
 			<release version="5.10.236" launch="2025-05-26" eol="2026-06-01"/>
+			<release version="5.10.238" launch="2025-07-24" eol="2026-11-01"/>
 		</lts-versions>
 	</branch>
 
@@ -49,12 +72,13 @@
 			<release version="5.15.144" launch="2024-02-20" eol="2024-11-01"/>
 			<release version="5.15.148" launch="2024-04-27" eol="2025-06-01"/>
 			<release version="5.15.149" launch="2024-06-12" eol="2025-08-01"/>
-			<release version="5.15.151" launch="2024-08-21" eol="2025-09-01"/>
-			<release version="5.15.153" launch="2024-09-25" eol="2025-10-01"/>
-			<release version="5.15.167" launch="2024-11-19" eol="2025-12-01"/>
-			<release version="5.15.170" launch="2025-01-22" eol="2026-02-01"/>
-			<release version="5.15.178" launch="2025-03-24" eol="2026-04-01"/>
-			<release version="5.15.180" launch="2025-05-26" eol="2026-06-01"/>
+			<release version="5.15.151" launch="2024-08-21" eol="2025-12-01"/>
+			<release version="5.15.153" launch="2024-09-25" eol="2026-01-01"/>
+			<release version="5.15.167" launch="2024-11-19" eol="2026-03-01"/>
+			<release version="5.15.170" launch="2025-01-22" eol="2026-03-01"/>
+			<release version="5.15.178" launch="2025-03-24" eol="2026-07-01"/>
+			<release version="5.15.180" launch="2025-05-26" eol="2026-09-01"/>
+			<release version="5.15.185" launch="2025-07-24" eol="2026-11-01"/>
 		</lts-versions>
 	</branch>
 
@@ -73,6 +97,7 @@
 			<release version="5.15.170" launch="2025-01-22" eol="2026-02-01"/>
 			<release version="5.15.178" launch="2025-03-24" eol="2026-04-01"/>
 			<release version="5.15.180" launch="2025-05-26" eol="2026-06-01"/>
+			<release version="5.15.185" launch="2025-07-24" eol="2026-11-01"/>
 		</lts-versions>
 	</branch>
 
@@ -85,38 +110,44 @@
 			<release version="6.1.78" launch="2024-06-20" eol="2025-07-01"/>
 			<release version="6.1.84" launch="2024-07-24" eol="2025-08-01"/>
 			<release version="6.1.90" launch="2024-08-22" eol="2025-09-01"/>
-			<release version="6.1.93" launch="2024-09-26" eol="2025-10-01"/>
-			<release version="6.1.99" launch="2024-10-09" eol="2025-11-01"/>
-			<release version="6.1.112" launch="2024-11-10" eol="2025-12-01"/>
+			<release version="6.1.93" launch="2024-09-26" eol="2026-01-01"/>
+			<release version="6.1.99" launch="2024-10-09" eol="2026-01-01"/>
+			<release version="6.1.112" launch="2024-11-10" eol="2026-01-01"/>
 			<release version="6.1.115" launch="2024-12-13" eol="2026-01-01"/>
 			<release version="6.1.118" launch="2025-01-15" eol="2026-02-01"/>
 			<release version="6.1.124" launch="2025-02-10" eol="2026-03-01"/>
-			<release version="6.1.128" launch="2025-03-11" eol="2026-04-01"/>
-			<release version="6.1.129" launch="2025-04-08" eol="2026-05-01"/>
-			<release version="6.1.134" launch="2025-05-15" eol="2026-06-01"/>
-			<release version="6.1.138" launch="2025-06-10" eol="2026-07-01"/>
+			<release version="6.1.128" launch="2025-03-11" eol="2026-07-01"/>
+			<release version="6.1.129" launch="2025-04-08" eol="2026-08-01"/>
+			<release version="6.1.134" launch="2025-05-15" eol="2026-08-01"/>
+			<release version="6.1.138" launch="2025-06-10" eol="2026-10-01"/>
+			<release version="6.1.141" launch="2025-07-09" eol="2026-11-01"/>
+			<release version="6.1.145" launch="2025-08-11" eol="2026-12-01"/>
 		</lts-versions>
 	</branch>
 
 	<branch name="android15-6.6" min_android_release="15" version="6.6" launch="2023-10-29" eol="2028-07-01">
 		<lts-versions>
-			<release version="6.6.30" launch="2024-07-12" eol="2025-09-01"/>
-			<release version="6.6.46" launch="2024-09-16" eol="2025-10-01"/>
-			<release version="6.6.50" launch="2024-10-11" eol="2025-11-01"/>
-			<release version="6.6.56" launch="2024-11-11" eol="2025-12-01"/>
-			<release version="6.6.57" launch="2024-12-24" eol="2026-01-01"/>
-			<release version="6.6.58" launch="2025-01-14" eol="2026-02-01"/>
-			<release version="6.6.66" launch="2025-02-10" eol="2026-03-01"/>
-			<release version="6.6.77" launch="2025-03-12" eol="2026-04-01"/>
-			<release version="6.6.82" launch="2025-04-09" eol="2026-05-01"/>
-			<release version="6.6.87" launch="2025-05-09" eol="2026-06-01"/>
-			<release version="6.6.89" launch="2025-06-10" eol="2026-07-01"/>
+			<release version="6.6.30" launch="2024-07-12" eol="2025-11-01"/>
+			<release version="6.6.46" launch="2024-09-16" eol="2025-11-01"/>
+			<release version="6.6.50" launch="2024-10-11" eol="2026-02-01"/>
+			<release version="6.6.56" launch="2024-11-11" eol="2026-02-01"/>
+			<release version="6.6.57" launch="2024-12-24" eol="2026-04-01"/>
+			<release version="6.6.58" launch="2025-01-14" eol="2026-04-01"/>
+			<release version="6.6.66" launch="2025-02-10" eol="2026-06-01"/>
+			<release version="6.6.77" launch="2025-03-12" eol="2026-07-01"/>
+			<release version="6.6.82" launch="2025-04-09" eol="2026-08-01"/>
+			<release version="6.6.87" launch="2025-05-09" eol="2026-08-01"/>
+			<release version="6.6.89" launch="2025-06-10" eol="2026-08-01"/>
+			<release version="6.6.92" launch="2025-07-09" eol="2026-11-01"/>
+			<release version="6.6.98" launch="2025-08-11" eol="2026-12-01"/>
 		</lts-versions>
 	</branch>
 
 	<branch name="android16-6.12" min_android_release="16" version="6.12" launch="2024-11-17" eol="2029-07-01">
 		<lts-versions>
-			<release version="6.12.23" launch="2025-06-12" eol="2026-07-01"/>
+			<release version="6.12.23" launch="2025-06-12" eol="2026-10-01"/>
+			<release version="6.12.30" launch="2025-07-11" eol="2026-11-01"/>
+			<release version="6.12.38" launch="2025-08-11" eol="2026-12-01"/>
 		</lts-versions>
 	</branch>
 </kernels>
