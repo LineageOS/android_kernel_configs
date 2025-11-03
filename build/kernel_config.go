@@ -29,15 +29,17 @@ var (
 	pctx = android.NewPackageContext("android/soong/kernel/configs")
 
 	kconfigXmlFixupRule = pctx.AndroidStaticRule("kconfig_xml_fixup", blueprint.RuleParams{
-		Command:     `${kconfigXmlFixupCmd} --input ${in} --output-version ${outputVersion} --output-matrix ${out}`,
-		CommandDeps: []string{"${kconfigXmlFixupCmd}"},
-		Description: "kconfig_xml_fixup ${in}",
+		Command:         `${kconfigXmlFixupCmd} --input ${in} --output-version ${outputVersion} --output-matrix ${out}`,
+		CommandDeps:     []string{"${kconfigXmlFixupCmd}"},
+		Description:     "kconfig_xml_fixup ${in}",
+		SandboxDisabled: true,
 	}, "outputVersion")
 
 	assembleVintfRule = pctx.AndroidStaticRule("assemble_vintf", blueprint.RuleParams{
-		Command:     `${assembleVintfCmd} ${flags} -i ${in} -o ${out}`,
-		CommandDeps: []string{"${assembleVintfCmd}"},
-		Description: "assemble_vintf -i ${in}",
+		Command:         `${assembleVintfCmd} ${flags} -i ${in} -o ${out}`,
+		CommandDeps:     []string{"${assembleVintfCmd}"},
+		Description:     "assemble_vintf -i ${in}",
+		SandboxDisabled: true,
 	}, "flags")
 )
 

@@ -92,6 +92,7 @@
         <build id="99c470634467de23e2dc2931e3bdc3f4f4d7f6299cecd01e5576b3dfc8b486e2" bug="451840449"/>
         <build id="d10ba251061e644c572d4368d205adf6658c11c7095e2363be3c652271f67885" bug="451264760"/>
         <build id="0e03ccc82c8caa2f9cb8044645389c199aa1b67ee2977dfe6878f2e46e23a106" bug="451469942"/>
+        <build id="b95166fdb8d521577c7b44075da90a8d8d2ce82e998f3dbcf1a64ef5f95d24e2" bug="455778110"/>
     </branch>
     <branch name="android16-6.12">
         <build id="38a0ecd98b0b73ee7afb73b893a1f4875d693bc8069b9a02fd90b45ed581b117" bug="435129220"/>
@@ -111,5 +112,6 @@
         <build id="18bd50b0951627bfd3809f3be9f3b81bd9bdf12c4ec1e4cc74938973cafb3bce" bug="452159376"/>
         <build id="8ec7dd43e30899581cad871bae187fbb26b97ab597b6990c07242cf1350530f8" bug="451864203"/>
         <build id="6e5f7256dd7907b26370268a2742d599ca53ba36d9961ae27605e86ac77c7f57" bug="452537391"/>
+        <build id="b592d11fd806e26ff4c8b3c3d50cc5be43942df512b4f23a7d51e3357450dab9" bug="455698576"/>
     </branch>
 </ogki-approved>
