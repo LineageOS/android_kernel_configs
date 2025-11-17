@@ -23,7 +23,7 @@ import (
 	"android/soong/android"
 )
 
-//go:generate go run ../../../build/blueprint/gobtools/codegen/gob_gen.go
+//go:generate go run ../../../build/blueprint/gobtools/codegen
 
 var (
 	pctx = android.NewPackageContext("android/soong/kernel/configs")

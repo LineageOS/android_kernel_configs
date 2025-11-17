@@ -5,7 +5,10 @@ package configs
 import (
 	"android/soong/android"
 	"bytes"
+	"fmt"
 	"github.com/google/blueprint/gobtools"
+	"github.com/google/blueprint/proptools"
+	"reflect"
 )
 
 // begin of kernel_config.go
@@ -20,6 +23,35 @@ func (r KernelConfigInfo) Encode(ctx gobtools.EncContext, buf *bytes.Buffer) err
 		return err
 	}
 	return err
+}
+
+func (r KernelConfigInfo) CustomHash(hasher *proptools.Hasher) error {
+	hasher.WriteString(":configs.KernelConfigInfo")
+	hasher.WriteInt(1)
+	hasher.WriteString(":configs.android.Path")
+	val1 := r.OutputPath == nil
+	if val1 {
+		hasher.WriteByte(0)
+	} else {
+		if v := reflect.ValueOf(r.OutputPath); v.Kind() == reflect.Ptr {
+			if v.IsNil() {
+				panic(fmt.Errorf("nil pointer is not supported in interface"))
+			} else {
+				val2 := r.OutputPath == nil
+				if val2 {
+					hasher.WriteByte(0)
+				} else {
+					val3 := func(hasher *proptools.Hasher) error { return r.OutputPath.(proptools.CustomHash).CustomHash(hasher) }
+					if err := proptools.HashReference(hasher, uintptr(v.Pointer()), val3); err != nil {
+						return err
+					}
+				}
+			}
+		} else {
+			r.OutputPath.(proptools.CustomHash).CustomHash(hasher)
+		}
+	}
+	return nil
 }
 
 func (r *KernelConfigInfo) Decode(ctx gobtools.EncContext, buf *bytes.Reader) error {
