@@ -18,16 +18,16 @@ package {
 }
 
 kernel_config {
-    name: "kernel_config_c_6.12",
-    srcs: [":kernel_base_config_c_6.12"],
-    meta: ":kernel_meta_c_6.12",
+    name: "kernel_config_c_6.18",
+    srcs: [":kernel_base_config_c_6.18"],
+    meta: ":kernel_meta_c_6.18",
 }
 
 filegroup {
-    name: "kernel_base_config_c_6.12",
+    name: "kernel_base_config_c_6.18",
     srcs: select(soong_config_variable("google_tv", "using_tv_gki"), {
         "true": [
-            ":tv_kernel_base_config_c_6.12",
+            ":tv_kernel_base_config_c_6.18",
         ],
         default: [
             "android-base.config",
@@ -36,16 +36,16 @@ filegroup {
 }
 
 genrule {
-    name: "tv_kernel_base_config_c_6.12",
+    name: "tv_kernel_base_config_c_6.18",
     srcs: ["android-tv-base.config"],
     out: ["android-base.config"],
     cmd: "cp $(in) $(out)",
 }
 
 filegroup {
-    name: "kernel_meta_c_6.12",
+    name: "kernel_meta_c_6.18",
     srcs: select(soong_config_variable("google_tv", "using_tv_gki"), {
-        "true": ["android-tv-base-conditional.xml",],
-        default: ["android-base-conditional.xml",],
-    })
+        "true": ["android-tv-base-conditional.xml"],
+        default: ["android-base-conditional.xml"],
+    }),
 }
