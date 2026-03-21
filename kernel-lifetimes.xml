@@ -162,4 +162,7 @@ was not changed - just the enforcement)
 			<release version="6.12.58" launch="2025-12-11" eol="2027-04-01"/>
 		</lts-versions>
 	</branch>
+	<branch name="android17-6.18" min_android_release="17" version="6.18" launch="2025-11-30" eol="2030-07-01">
+		<no-releases reason="branch in pre-release phase"/>
+	</branch>
 </kernels>
