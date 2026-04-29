@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e13b5a5_3c9034db",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-29T19:10:35Z",
+      "side": 1,
+      "message": "Leaving votes to stew while I\u0027m out - Will merge when I\u0027m back if no one else has objections - boots and works on pro1x and moto_sm8250.",
+      "revId": "82284e9b4c93b73c5437c4b46d36db4f3a17f654",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
