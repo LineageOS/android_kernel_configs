@@ -1,4 +1,4 @@
-<kernel minlts="5.4.86" />
+<kernel minlts="5.4.302" />
 
 <!-- KEEP ALPHABETICALLY SORTED -->
 <!-- ARM base requirements -->
