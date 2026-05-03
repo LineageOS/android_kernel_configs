@@ -21,10 +21,6 @@ kernel_config {
     name: "kernel_config_t_5.4",
     srcs: [
         "android-base.config",
-        "non_debuggable.config",
-    ],
-    debuggable_srcs: [
-        "android-base.config",
     ],
     meta: "android-base-conditional.xml",
 }
