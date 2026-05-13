@@ -48,6 +48,10 @@
 		<value type="bool">y</value>
 	</config>
 	<config>
+		<key>CONFIG_CFI_CLANG</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
 		<key>CONFIG_COMPAT</key>
 		<value type="bool">y</value>
 	</config>
@@ -57,6 +61,10 @@
 	</config>
 	<config>
 		<key>CONFIG_SETEND_EMULATION</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_SHADOW_CALL_STACK</key>
 		<value type="bool">y</value>
 	</config>
 	<config>
@@ -73,6 +81,10 @@
 	</config>
 	<config>
 		<key>CONFIG_HAVE_MOVE_PUD</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
+		<key>CONFIG_KFENCE</key>
 		<value type="bool">y</value>
 	</config>
 	<config>
@@ -94,6 +106,10 @@
 		<value type="bool">n</value>
 	</config>
 	<config>
+		<key>CONFIG_KFENCE</key>
+		<value type="bool">y</value>
+	</config>
+	<config>
 		<key>CONFIG_PAGE_TABLE_ISOLATION</key>
 		<value type="bool">y</value>
 	</config>
@@ -111,6 +127,20 @@
 	</config>
 	<config>
 		<key>CONFIG_USERFAULTFD</key>
+		<value type="bool">y</value>
+	</config>
+</group>
+
+<!-- x86_64 base requirements -->
+<group>
+	<conditions>
+		<config>
+			<key>CONFIG_X86_64</key>
+			<value type="bool">y</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_CFI_CLANG</key>
 		<value type="bool">y</value>
 	</config>
 	<config>
@@ -169,6 +199,38 @@
 	</conditions>
 	<config>
 		<key>CONFIG_F2FS_FS_POSIX_ACL</key>
+		<value type="bool">y</value>
+	</config>
+</group>
+
+<!-- CONFIG_VMAP_STACK requirement -->
+<group>
+	<conditions>
+		<config>
+			<key>CONFIG_HAVE_ARCH_VMAP_STACK</key>
+			<value type="bool">y</value>
+		</config>
+		<config>
+			<key>CONFIG_KASAN_SW_TAGS</key>
+			<value type="bool">n</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_VMAP_STACK</key>
+		<value type="bool">y</value>
+	</config>
+</group>
+
+<!-- CONFIG_INIT_STACK_ALL_ZERO requirement -->
+<group>
+	<conditions>
+		<config>
+			<key>CONFIG_CC_HAS_AUTO_VAR_INIT_ZERO</key>
+			<value type="bool">y</value>
+		</config>
+	</conditions>
+	<config>
+		<key>CONFIG_INIT_STACK_ALL_ZERO</key>
 		<value type="bool">y</value>
 	</config>
 </group>
