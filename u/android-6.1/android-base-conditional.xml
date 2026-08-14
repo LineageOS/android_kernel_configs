@@ -143,10 +143,10 @@
 			<value type="bool">y</value>
 		</config>
 	</conditions>
-	<!--<config>
+	<config>
 		<key>CONFIG_CFI_CLANG</key>
 		<value type="bool">y</value>
-	</config>-->
+	</config>
 	<config>
 		<key>CONFIG_BPF_JIT_ALWAYS_ON</key>
 		<value type="bool">y</value>
